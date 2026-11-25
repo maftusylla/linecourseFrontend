@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tableau de bord administrateur LineCourse : vue globale des comptes, répartition des rôles, formations et indicateurs de sécurité."
+    />
+    <title>Tableau de bord administration — LineCourse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/theme-light.css" />
+    <link rel="stylesheet" href="../assets/css/theme-dark.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/pages.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Aller au contenu principal</a>
+
+    <header class="topbar" role="banner">
+      <div class="topbar-inner">
+        <a href="tableau-de-bord.html" class="brand-wordmark">LineCourse</a>
+
+        <nav class="topbar-nav" aria-label="Navigation administration">
+          <a href="tableau-de-bord.html" class="nav-link is-active" aria-current="page">Tableau de bord</a>
+          <a href="utilisateurs.html" class="nav-link">Utilisateurs</a>
+          <a href="cours.html" class="nav-link">Cours</a>
+          <a href="roles-acces.html" class="nav-link">Rôles &amp; accès</a>
+          <a href="securite.html" class="nav-link">Sécurité</a>
+        </nav>
+
+        <div class="topbar-actions">
+          <a href="../connexion.html" class="btn btn-secondary btn-nav-cta">Déconnexion</a>
+          <details class="mobile-nav-details">
+            <summary class="mobile-menu-summary" aria-label="Ouvrir le menu">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <line x1="4" y1="7" x2="20" y2="7" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="17" x2="20" y2="17" />
+              </svg>
+            </summary>
+            <div class="mobile-drawer">
+              <nav class="mobile-nav" aria-label="Navigation mobile administration">
+                <a href="tableau-de-bord.html" class="mobile-nav-link is-active">Tableau de bord</a>
+                <a href="utilisateurs.html" class="mobile-nav-link">Utilisateurs</a>
+                <a href="cours.html" class="mobile-nav-link">Cours</a>
+                <a href="roles-acces.html" class="mobile-nav-link">Rôles &amp; accès</a>
+                <a href="securite.html" class="mobile-nav-link">Sécurité</a>
+                <a href="profil.html" class="mobile-nav-link">Profil &amp; sécurité</a>
+                <a href="../connexion.html" class="mobile-nav-link mobile-nav-cta">Déconnexion</a>
+              </nav>
+            </div>
+          </details>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-container">
+      <div class="workspace-shell">
+        <aside class="workspace-sidebar" aria-label="Menu d'administration">
+          <div class="sidebar-heading">
+            <div class="author-inline">
+              <img src="../assets/images/instructor-portrait.jpg" alt="Aminata Touré" class="avatar-md" referrerpolicy="no-referrer" />
+              <div>
+                <div><strong>Aminata Touré</strong></div>
+                <div class="muted-text">Administratrice</div>
+              </div>
+            </div>
+          </div>
+          <nav class="sidebar-nav">
+            <a href="tableau-de-bord.html" class="sidebar-link is-active" aria-current="page">Tableau de bord</a>
+            <a href="utilisateurs.html" class="sidebar-link">Utilisateurs</a>
+            <a href="cours.html" class="sidebar-link">Cours</a>
+            <a href="roles-acces.html" class="sidebar-link">Rôles &amp; accès</a>
+            <a href="securite.html" class="sidebar-link">Sécurité</a>
+            <a href="profil.html" class="sidebar-link">Profil &amp; sécurité</a>
+          </nav>
+        </aside>
+
+        <div class="workspace-main">
+          <section class="surface-panel stack-md" aria-labelledby="admin-dash-heading">
+            <div class="section-header">
+              <div class="stack-sm">
+                <span class="hero-kicker">Espace Administration</span>
+                <h1 class="page-title" id="admin-dash-heading">Vue globale de la plateforme</h1>
+                <p class="muted-text">
+                  Supervision des comptes utilisateurs, modération des formations, attribution des rôles et suivi de sécurité.
+                </p>
+              </div>
+              <div class="filter-toolbar">
+                <a href="utilisateurs.html" class="btn btn-primary">Gérer les utilisateurs</a>
+                <a href="securite.html" class="btn btn-secondary">Journal de sécurité</a>
+              </div>
+            </div>
+
+            <div class="alert-banner is-info" role="note">
+              <div>
+                <strong class="alert-title">Données fictives de maquette</strong>
+                <span>Les chiffres affichés ci-dessous servent uniquement d’exemple visuel statique avant le raccordement aux données réelles.</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="kpi-strip" aria-label="Indicateurs globaux fictifs">
+            <div class="kpi-item">
+              <div class="kpi-value">128</div>
+              <div class="kpi-label">Comptes enregistrés</div>
+            </div>
+            <div class="kpi-item">
+              <div class="kpi-value">12</div>
+              <div class="kpi-label">Formations au total</div>
+            </div>
+            <div class="kpi-item">
+              <div class="kpi-value">342</div>
+              <div class="kpi-label">Inscriptions actives</div>
+            </div>
+            <div class="kpi-item">
+              <div class="kpi-value">2</div>
+              <div class="kpi-label">Alertes à vérifier</div>
+            </div>
+          </section>
+
+          <section class="surface-panel stack-md" aria-labelledby="role-dist-heading">
+            <div class="section-header">
+              <div>
+                <h2 class="section-title" id="role-dist-heading">Répartition des comptes par rôle</h2>
+                <p class="muted-text">Volumes indicatifs pour l’aperçu visuel de la maquette.</p>
+              </div>
+              <a href="roles-acces.html" class="inline-link">Configurer les rôles →</a>
+            </div>
+
+            <div class="role-distribution">
+              <div class="role-metric-box">
+                <span class="muted-text">Apprenants</span>
+                <div class="kpi-value">114</div>
+                <span class="status-label is-success">108 e-mails vérifiés</span>
+              </div>
+              <div class="role-metric-box">
+                <span class="muted-text">Enseignants</span>
+                <div class="kpi-value">11</div>
+                <span class="status-label is-info">8 auteurs actifs</span>
+              </div>
+              <div class="role-metric-box">
+                <span class="muted-text">Administrateurs</span>
+                <div class="kpi-value">3</div>
+                <span class="status-label is-success">Comptes protégés</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="two-col-panels" aria-label="État des comptes et des cours">
+            <div class="surface-panel stack-md">
+              <div class="panel-header">
+                <div>
+                  <h2 class="card-title">État des comptes</h2>
+                  <p class="muted-text">Vérification et activation sur la plateforme</p>
+                </div>
+                <a href="utilisateurs.html" class="btn btn-secondary btn-sm">Ouvrir</a>
+              </div>
+              <div class="stack-sm">
+                <div class="meta-line">
+                  <span class="status-label is-success">Actifs et vérifiés</span>
+                  <strong class="mono-num">119</strong>
+                </div>
+                <div class="meta-line">
+                  <span class="status-label is-warning">En attente de vérification e-mail</span>
+                  <strong class="mono-num">6</strong>
+                </div>
+                <div class="meta-line">
+                  <span class="status-label is-danger">Comptes désactivés</span>
+                  <strong class="mono-num">3</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="surface-panel stack-md">
+              <div class="panel-header">
+                <div>
+                  <h2 class="card-title">État des formations</h2>
+                  <p class="muted-text">Répartition entre cours publiés et brouillons</p>
+                </div>
+                <a href="cours.html" class="btn btn-secondary btn-sm">Gérer</a>
+              </div>
+              <div class="stack-sm">
+                <div class="meta-line">
+                  <span class="status-label is-success">Publiées dans le catalogue</span>
+                  <strong class="mono-num">9</strong>
+                </div>
+                <div class="meta-line">
+                  <span class="status-label is-warning">Brouillons enseignants</span>
+                  <strong class="mono-num">3</strong>
+                </div>
+                <div class="meta-line">
+                  <span class="muted-text">Formations archivées</span>
+                  <strong class="mono-num">2</strong>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <a href="tableau-de-bord.html" class="brand-wordmark">LineCourse</a>
+          <p class="footer-copy">
+            Espace administration · Gestion des utilisateurs, des cours, des rôles et de la sécurité.
+          </p>
+        </div>
+        <nav class="footer-links" aria-label="Navigation administration">
+          <a href="tableau-de-bord.html">Tableau de bord</a>
+          <a href="utilisateurs.html">Utilisateurs</a>
+          <a href="cours.html">Cours</a>
+          <a href="roles-acces.html">Rôles &amp; accès</a>
+          <a href="securite.html">Sécurité</a>
+          <a href="profil.html">Profil &amp; sécurité</a>
+          <a href="../connexion.html">Déconnexion</a>
+        </nav>
+        <div class="footer-legal">
+          <span>© 2026 LineCourse</span>
+          <span aria-hidden="true">·</span>
+          <span>Espace Administration</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

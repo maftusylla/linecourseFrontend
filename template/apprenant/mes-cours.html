@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mes cours LineCourse : liste de vos inscriptions actives, pourcentages d’avancement et poursuite de l’apprentissage."
+    />
+    <title>Mes cours — Espace apprenant LineCourse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/theme-light.css" />
+    <link rel="stylesheet" href="../assets/css/theme-dark.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/pages.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Aller au contenu principal</a>
+
+    <header class="topbar" role="banner">
+      <div class="topbar-inner">
+        <a href="tableau-de-bord.html" class="brand-wordmark">LineCourse</a>
+
+        <nav class="topbar-nav" aria-label="Navigation apprenant">
+          <a href="tableau-de-bord.html" class="nav-link">Tableau de bord</a>
+          <a href="catalogue.html" class="nav-link">Catalogue</a>
+          <a href="mes-cours.html" class="nav-link is-active" aria-current="page">Mes cours</a>
+          <a href="apprentissage.html" class="nav-link">Apprentissage</a>
+          <a href="profil.html" class="nav-link">Profil &amp; sécurité</a>
+        </nav>
+
+        <div class="topbar-actions">
+          <a href="../connexion.html" class="btn btn-secondary btn-nav-cta">Déconnexion</a>
+          <details class="mobile-nav-details">
+            <summary class="mobile-menu-summary" aria-label="Ouvrir le menu">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <line x1="4" y1="7" x2="20" y2="7" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="17" x2="20" y2="17" />
+              </svg>
+            </summary>
+            <div class="mobile-drawer">
+              <nav class="mobile-nav" aria-label="Navigation mobile apprenant">
+                <a href="tableau-de-bord.html" class="mobile-nav-link">Tableau de bord</a>
+                <a href="catalogue.html" class="mobile-nav-link">Catalogue</a>
+                <a href="mes-cours.html" class="mobile-nav-link is-active">Mes cours</a>
+                <a href="apprentissage.html" class="mobile-nav-link">Apprentissage</a>
+                <a href="profil.html" class="mobile-nav-link">Profil &amp; sécurité</a>
+                <a href="../connexion.html" class="mobile-nav-link mobile-nav-cta">Déconnexion</a>
+              </nav>
+            </div>
+          </details>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-container stack-xl">
+      <section class="stack-md" aria-labelledby="my-courses-heading">
+        <div class="section-header">
+          <div>
+            <h1 class="page-title" id="my-courses-heading">Mes cours</h1>
+            <p class="lead-text">
+              Retrouvez les formations auxquelles vous êtes inscrit ainsi que votre avancement détaillé.
+            </p>
+          </div>
+          <a href="catalogue.html" class="btn btn-primary">Ajouter une formation</a>
+        </div>
+
+        <div class="surface-panel filter-toolbar">
+          <div class="segmented" role="group" aria-label="Filtrer mes inscriptions">
+            <a href="mes-cours.html" class="segmented-item is-active">Toutes (3)</a>
+            <a href="mes-cours.html" class="segmented-item">En cours (2)</a>
+            <a href="mes-cours.html" class="segmented-item">Terminées (1)</a>
+          </div>
+          <span class="muted-text">Progression globale moyenne : <strong class="mono-num">64 %</strong></span>
+        </div>
+      </section>
+
+      <section class="course-grid" aria-label="Formations inscrites">
+        <article class="course-card">
+          <div class="media-frame">
+            <img
+              src="../assets/images/course-architecture.jpg"
+              alt="Architecture Express & TypeScript Modulaire"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+          <div class="course-card-body">
+            <div class="meta-line">
+              <span>Backend</span>
+              <span aria-hidden="true">·</span>
+              <span class="mono-num">4 modules · 12 leçons</span>
+              <span aria-hidden="true">·</span>
+              <span class="status-label is-info">En cours</span>
+            </div>
+            <h2 class="card-title">Architecture Express &amp; TypeScript Modulaire</h2>
+            <p class="course-card-desc">
+              Dernière leçon ouverte : 05. Contrôle d’accès et vérification de propriété.
+            </p>
+            <div class="stack-sm">
+              <div class="meta-line">
+                <span>Progression : <strong class="mono-num">68 %</strong></span>
+                <span aria-hidden="true">·</span>
+                <span class="mono-num">8 / 12 leçons</span>
+              </div>
+              <div class="progress-track" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100" aria-label="Progression 68%">
+                <div class="progress-fill" style="width: 68%"></div>
+              </div>
+            </div>
+            <div class="course-card-footer">
+              <form action="#" method="post">
+                <button type="submit" class="btn btn-ghost btn-sm">Se désinscrire</button>
+              </form>
+              <a href="apprentissage.html" class="btn btn-primary btn-sm">Poursuivre</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="media-frame">
+            <img
+              src="../assets/images/course-security.jpg"
+              alt="Sécurité des API, JWT & Rotation des Sessions"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+          <div class="course-card-body">
+            <div class="meta-line">
+              <span>Sécurité</span>
+              <span aria-hidden="true">·</span>
+              <span class="mono-num">3 modules · 10 leçons</span>
+              <span aria-hidden="true">·</span>
+              <span class="status-label is-info">En cours</span>
+            </div>
+            <h2 class="card-title">Sécurité des API, JWT &amp; Rotation des Sessions</h2>
+            <p class="course-card-desc">
+              Dernière leçon ouverte : 03. Stockage sécurisé des jetons de rafraîchissement.
+            </p>
+            <div class="stack-sm">
+              <div class="meta-line">
+                <span>Progression : <strong class="mono-num">25 %</strong></span>
+                <span aria-hidden="true">·</span>
+                <span class="mono-num">3 / 10 leçons</span>
+              </div>
+              <div class="progress-track" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" aria-label="Progression 25%">
+                <div class="progress-fill" style="width: 25%"></div>
+              </div>
+            </div>
+            <div class="course-card-footer">
+              <form action="#" method="post">
+                <button type="submit" class="btn btn-ghost btn-sm">Se désinscrire</button>
+              </form>
+              <a href="apprentissage.html" class="btn btn-primary btn-sm">Poursuivre</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="media-frame">
+            <img
+              src="../assets/images/course-ui-systems.jpg"
+              alt="Systèmes d'interfaces HTML5 & CSS3 modernes"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+          <div class="course-card-body">
+            <div class="meta-line">
+              <span>Interfaces</span>
+              <span aria-hidden="true">·</span>
+              <span class="mono-num">3 modules · 11 leçons</span>
+              <span aria-hidden="true">·</span>
+              <span class="status-label is-success">Terminé</span>
+            </div>
+            <h2 class="card-title">Systèmes d’interfaces HTML5 &amp; CSS3 modernes</h2>
+            <p class="course-card-desc">
+              Toutes les leçons de ce parcours ont été marquées comme terminées.
+            </p>
+            <div class="stack-sm">
+              <div class="meta-line">
+                <span>Progression : <strong class="mono-num">100 %</strong></span>
+                <span aria-hidden="true">·</span>
+                <span class="mono-num">11 / 11 leçons</span>
+              </div>
+              <div class="progress-track" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="Progression 100%">
+                <div class="progress-fill" style="width: 100%"></div>
+              </div>
+            </div>
+            <div class="course-card-footer">
+              <a href="detail-cours.html" class="btn btn-ghost btn-sm">Programme</a>
+              <a href="apprentissage.html" class="btn btn-secondary btn-sm">Revoir les leçons</a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <a href="tableau-de-bord.html" class="brand-wordmark">LineCourse</a>
+          <p class="footer-copy">
+            Espace apprenant · Suivi des formations et progression par leçon.
+          </p>
+        </div>
+        <nav class="footer-links" aria-label="Navigation apprenant">
+          <a href="tableau-de-bord.html">Tableau de bord</a>
+          <a href="catalogue.html">Catalogue</a>
+          <a href="mes-cours.html">Mes cours</a>
+          <a href="apprentissage.html">Apprentissage</a>
+          <a href="profil.html">Profil &amp; sécurité</a>
+          <a href="../connexion.html">Déconnexion</a>
+        </nav>
+        <div class="footer-legal">
+          <span>© 2026 LineCourse</span>
+          <span aria-hidden="true">·</span>
+          <span>Espace Apprenant</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

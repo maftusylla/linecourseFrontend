@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Studio pédagogique enseignant LineCourse : créer et éditer une formation, structurer les modules et rédiger les leçons."
+    />
+    <title>Studio pédagogique — Espace enseignant LineCourse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/theme-light.css" />
+    <link rel="stylesheet" href="../assets/css/theme-dark.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/pages.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Aller au contenu principal</a>
+
+    <header class="topbar" role="banner">
+      <div class="topbar-inner">
+        <a href="tableau-de-bord.html" class="brand-wordmark">LineCourse</a>
+
+        <nav class="topbar-nav" aria-label="Navigation enseignant">
+          <a href="tableau-de-bord.html" class="nav-link">Tableau de bord</a>
+          <a href="catalogue.html" class="nav-link">Catalogue</a>
+          <a href="cours-crees.html" class="nav-link">Cours créés</a>
+          <a href="studio.html" class="nav-link is-active" aria-current="page">Studio</a>
+          <a href="inscriptions.html" class="nav-link">Inscriptions</a>
+        </nav>
+
+        <div class="topbar-actions">
+          <a href="../connexion.html" class="btn btn-secondary btn-nav-cta">Déconnexion</a>
+          <details class="mobile-nav-details">
+            <summary class="mobile-menu-summary" aria-label="Ouvrir le menu">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <line x1="4" y1="7" x2="20" y2="7" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="17" x2="20" y2="17" />
+              </svg>
+            </summary>
+            <div class="mobile-drawer">
+              <nav class="mobile-nav" aria-label="Navigation mobile enseignant">
+                <a href="tableau-de-bord.html" class="mobile-nav-link">Tableau de bord</a>
+                <a href="catalogue.html" class="mobile-nav-link">Catalogue</a>
+                <a href="cours-crees.html" class="mobile-nav-link">Cours créés</a>
+                <a href="studio.html" class="mobile-nav-link is-active">Studio</a>
+                <a href="inscriptions.html" class="mobile-nav-link">Inscriptions</a>
+                <a href="profil.html" class="mobile-nav-link">Profil &amp; sécurité</a>
+                <a href="../connexion.html" class="mobile-nav-link mobile-nav-cta">Déconnexion</a>
+              </nav>
+            </div>
+          </details>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-container">
+      <div class="workspace-shell">
+        <aside class="workspace-sidebar" aria-label="Menu de l'espace enseignant">
+          <div class="sidebar-heading">
+            <div class="author-inline">
+              <img src="../assets/images/instructor-portrait.jpg" alt="Moussa Diop" class="avatar-md" referrerpolicy="no-referrer" />
+              <div>
+                <div><strong>Moussa Diop</strong></div>
+                <div class="muted-text">Enseignant</div>
+              </div>
+            </div>
+          </div>
+          <nav class="sidebar-nav">
+            <a href="tableau-de-bord.html" class="sidebar-link">Tableau de bord</a>
+            <a href="catalogue.html" class="sidebar-link">Catalogue</a>
+            <a href="cours-crees.html" class="sidebar-link">Cours créés (4)</a>
+            <a href="studio.html" class="sidebar-link is-active" aria-current="page">Studio pédagogique</a>
+            <a href="inscriptions.html" class="sidebar-link">Inscriptions</a>
+            <a href="profil.html" class="sidebar-link">Profil &amp; sécurité</a>
+          </nav>
+        </aside>
+
+        <div class="workspace-main">
+          <section class="stack-md" aria-labelledby="studio-heading">
+            <div class="section-header">
+              <div>
+                <div class="meta-line">
+                  <span>Studio pédagogique</span>
+                  <span aria-hidden="true">·</span>
+                  <span class="status-label is-warning">Brouillon en édition</span>
+                </div>
+                <h1 class="page-title" id="studio-heading">Journalisation structurée &amp; Diagnostic Node.js</h1>
+              </div>
+              <div class="filter-toolbar">
+                <a href="cours-crees.html" class="btn btn-secondary">Retour aux cours créés</a>
+                <button type="button" class="btn btn-primary">Publier la formation</button>
+              </div>
+            </div>
+          </section>
+
+          <!-- 1. Création / Édition de la formation -->
+          <form class="surface-panel stack-md" action="#" method="post" aria-labelledby="course-form-heading">
+            <div class="panel-header">
+              <div>
+                <h2 class="card-title" id="course-form-heading">Informations générales de la formation</h2>
+                <p class="muted-text">Définissez le titre, la description et le statut de visibilité dans le catalogue.</p>
+              </div>
+              <span class="status-label is-warning">Statut : Brouillon</span>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="field">
+                <label class="field-label" for="course-title">Titre de la formation</label>
+                <input
+                  id="course-title"
+                  name="titre"
+                  type="text"
+                  class="input"
+                  value="Journalisation structurée & Diagnostic Node.js"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label class="field-label" for="course-status">Statut de publication</label>
+                <select id="course-status" name="status" class="select">
+                  <option value="draft" selected>Brouillon (non publié)</option>
+                  <option value="published">Publié dans le catalogue</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="field-label" for="course-description">Description de la formation</label>
+              <textarea id="course-description" name="description" class="textarea" required>Apprenez à concevoir des journaux structurés avec corrélation des requêtes, filtrage des données sensibles et diagnostic rapide des erreurs en production.</textarea>
+            </div>
+
+            <div class="filter-toolbar">
+              <button type="submit" class="btn btn-primary">Enregistrer la formation</button>
+              <button type="button" class="btn btn-secondary">Passer en publié</button>
+              <button type="button" class="btn btn-danger">Supprimer ce brouillon</button>
+            </div>
+          </form>
+
+          <!-- 2. Gestion des modules et des leçons -->
+          <section class="two-col-panels" aria-label="Gestion des modules et leçons">
+            <div class="surface-panel stack-md">
+              <div class="panel-header">
+                <div>
+                  <h2 class="card-title">Modules de la formation</h2>
+                  <p class="muted-text">Organisez le programme par modules thématiques.</p>
+                </div>
+                <span class="mono-num muted-text">2 modules</span>
+              </div>
+
+              <div class="module-list">
+                <div class="module-block">
+                  <div class="module-header">
+                    <div>
+                      <strong>1. Fondamentaux de la journalisation</strong>
+                      <div class="muted-text">3 leçons</div>
+                    </div>
+                    <div class="filter-toolbar">
+                      <button type="button" class="btn btn-ghost btn-sm">Modifier</button>
+                      <button type="button" class="btn btn-danger btn-sm">Supprimer</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="module-block">
+                  <div class="module-header">
+                    <div>
+                      <strong>2. Corrélation et masquage des secrets</strong>
+                      <div class="muted-text">2 leçons</div>
+                    </div>
+                    <div class="filter-toolbar">
+                      <button type="button" class="btn btn-ghost btn-sm">Modifier</button>
+                      <button type="button" class="btn btn-danger btn-sm">Supprimer</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <form class="form-grid" action="#" method="post">
+                <div class="field">
+                  <label class="field-label" for="new-module-title">Titre du nouveau module</label>
+                  <input id="new-module-title" name="titre" type="text" class="input" placeholder="Ex. 3. Exploitation des journaux en production" required />
+                </div>
+                <div class="field">
+                  <label class="field-label" for="new-module-desc">Description du module</label>
+                  <textarea id="new-module-desc" name="description" class="textarea" placeholder="Objectifs et contenu couvert par ce module..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary">Ajouter le module</button>
+              </form>
+            </div>
+
+            <div class="surface-panel stack-md">
+              <div class="panel-header">
+                <div>
+                  <h2 class="card-title">Leçons du Module 1</h2>
+                  <p class="muted-text">Fondamentaux de la journalisation</p>
+                </div>
+                <span class="mono-num muted-text">3 leçons</span>
+              </div>
+
+              <div class="module-block">
+                <div class="lesson-row">
+                  <div>
+                    <div class="lesson-row-title">01. Journaux texte vs journaux JSON</div>
+                    <div class="muted-text">Leçon 1</div>
+                  </div>
+                  <div class="filter-toolbar">
+                    <button type="button" class="btn btn-ghost btn-sm">Éditer</button>
+                    <button type="button" class="btn btn-danger btn-sm">Supprimer</button>
+                  </div>
+                </div>
+                <div class="lesson-row">
+                  <div>
+                    <div class="lesson-row-title">02. Niveaux de gravité adaptés</div>
+                    <div class="muted-text">Leçon 2</div>
+                  </div>
+                  <div class="filter-toolbar">
+                    <button type="button" class="btn btn-ghost btn-sm">Éditer</button>
+                    <button type="button" class="btn btn-danger btn-sm">Supprimer</button>
+                  </div>
+                </div>
+                <div class="lesson-row">
+                  <div>
+                    <div class="lesson-row-title">03. Identifiant de corrélation par requête</div>
+                    <div class="muted-text">Leçon 3</div>
+                  </div>
+                  <div class="filter-toolbar">
+                    <button type="button" class="btn btn-ghost btn-sm">Éditer</button>
+                    <button type="button" class="btn btn-danger btn-sm">Supprimer</button>
+                  </div>
+                </div>
+              </div>
+
+              <form class="form-grid" action="#" method="post">
+                <div class="field">
+                  <label class="field-label" for="lesson-title-input">Titre de la leçon</label>
+                  <input id="lesson-title-input" name="titre" type="text" class="input" placeholder="Ex. 04. Tracer les temps de réponse" required />
+                </div>
+                <div class="field">
+                  <label class="field-label" for="lesson-content-input">Contenu pédagogique de la leçon</label>
+                  <textarea id="lesson-content-input" name="contenu" class="textarea" placeholder="Rédigez le contenu complet de la leçon..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enregistrer la leçon</button>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <a href="tableau-de-bord.html" class="brand-wordmark">LineCourse</a>
+          <p class="footer-copy">
+            Espace enseignant · Création de cours, gestion des modules et suivi des inscriptions.
+          </p>
+        </div>
+        <nav class="footer-links" aria-label="Navigation enseignant">
+          <a href="tableau-de-bord.html">Tableau de bord</a>
+          <a href="catalogue.html">Catalogue</a>
+          <a href="cours-crees.html">Cours créés</a>
+          <a href="studio.html">Studio</a>
+          <a href="inscriptions.html">Inscriptions</a>
+          <a href="profil.html">Profil &amp; sécurité</a>
+          <a href="../connexion.html">Déconnexion</a>
+        </nav>
+        <div class="footer-legal">
+          <span>© 2026 LineCourse</span>
+          <span aria-hidden="true">·</span>
+          <span>Espace Enseignant</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

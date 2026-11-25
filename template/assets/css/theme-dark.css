@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Cours-Alygne — Thème Sombre (Graphite profond & Ambre lumineux)
+   Activation statique : ajouter la classe "theme-dark" ou "dark" sur <html>
+   ou activer la préférence système sombre.
+   ========================================================================== */
+
+html.theme-dark,
+body.theme-dark,
+html.dark {
+  --bg-canvas: #141413;
+  --bg-surface: #1e1d1b;
+  --bg-subtle: #272522;
+  --bg-topbar: rgba(20, 20, 19, 0.94);
+  --border-hairline: #33302b;
+  --border-strong: #4a453e;
+
+  --text-primary: #f5f4f1;
+  --text-secondary: #c4bdb4;
+  --text-muted: #9b948b;
+
+  --accent: #f59e0b;
+  --accent-hover: #fbbf24;
+  --accent-ink: #141413;
+  --accent-soft: rgba(245, 158, 11, 0.14);
+  --accent-highlight: #fbbf24;
+
+  --status-success: #4ade80;
+  --status-success-bg: rgba(74, 222, 128, 0.1);
+  --status-success-border: rgba(74, 222, 128, 0.3);
+
+  --status-warning: #fbbf24;
+  --status-warning-bg: rgba(251, 191, 36, 0.12);
+  --status-warning-border: rgba(251, 191, 36, 0.32);
+
+  --status-danger: #f87171;
+  --status-danger-bg: rgba(248, 113, 113, 0.12);
+  --status-danger-border: rgba(248, 113, 113, 0.3);
+
+  --status-info: #60a5fa;
+  --status-info-bg: rgba(96, 165, 250, 0.12);
+  --status-info-border: rgba(96, 165, 250, 0.3);
+
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.28), 0 10px 28px -14px rgba(0, 0, 0, 0.45);
+}
+
+html.theme-dark body,
+body.theme-dark,
+html.dark body {
+  letter-spacing: 0.006em;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not(.theme-light) {
+    --bg-canvas: #141413;
+    --bg-surface: #1e1d1b;
+    --bg-subtle: #272522;
+    --bg-topbar: rgba(20, 20, 19, 0.94);
+    --border-hairline: #33302b;
+    --border-strong: #4a453e;
+
+    --text-primary: #f5f4f1;
+    --text-secondary: #c4bdb4;
+    --text-muted: #9b948b;
+
+    --accent: #f59e0b;
+    --accent-hover: #fbbf24;
+    --accent-ink: #141413;
+    --accent-soft: rgba(245, 158, 11, 0.14);
+    --accent-highlight: #fbbf24;
+
+    --status-success: #4ade80;
+    --status-success-bg: rgba(74, 222, 128, 0.1);
+    --status-success-border: rgba(74, 222, 128, 0.3);
+
+    --status-warning: #fbbf24;
+    --status-warning-bg: rgba(251, 191, 36, 0.12);
+    --status-warning-border: rgba(251, 191, 36, 0.32);
+
+    --status-danger: #f87171;
+    --status-danger-bg: rgba(248, 113, 113, 0.12);
+    --status-danger-border: rgba(248, 113, 113, 0.3);
+
+    --status-info: #60a5fa;
+    --status-info-bg: rgba(96, 165, 250, 0.12);
+    --status-info-border: rgba(96, 165, 250, 0.3);
+
+    --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.28), 0 10px 28px -14px rgba(0, 0, 0, 0.45);
+  }
+}

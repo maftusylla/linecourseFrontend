@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Cours-Alygne — Thème Clair (Studio Moderne Chaleureux : Pierre & Ambre)
+   Palette 60-30-10 · Contraste WCAG AA vérifié
+   ========================================================================== */
+
+:root,
+.theme-light {
+  --font-display: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+  /* 60% Toile neutre dominante */
+  --bg-canvas: #f5f4f1;
+  /* 30% Surfaces structurelles */
+  --bg-surface: #ffffff;
+  --bg-subtle: #eae7e1;
+  --bg-topbar: rgba(245, 244, 241, 0.94);
+  --border-hairline: #d8d3ca;
+  --border-strong: #b6afa3;
+
+  /* Typographie graphite */
+  --text-primary: #1c1917;
+  --text-secondary: #57534e;
+  --text-muted: #706a63;
+
+  /* 10% Accent Ambre (contraste >= 4.5:1 avec blanc) */
+  --accent: #b45309;
+  --accent-hover: #92400e;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(180, 83, 9, 0.1);
+  --accent-highlight: #d97706;
+
+  /* États sémantiques (toujours couplés à un libellé explicite) */
+  --status-success: #15803d;
+  --status-success-bg: rgba(21, 128, 61, 0.08);
+  --status-success-border: rgba(21, 128, 61, 0.28);
+
+  --status-warning: #b45309;
+  --status-warning-bg: rgba(180, 83, 9, 0.09);
+  --status-warning-border: rgba(180, 83, 9, 0.28);
+
+  --status-danger: #b91c1c;
+  --status-danger-bg: rgba(185, 28, 28, 0.08);
+  --status-danger-border: rgba(185, 28, 28, 0.28);
+
+  --status-info: #1d4ed8;
+  --status-info-bg: rgba(29, 78, 216, 0.08);
+  --status-info-border: rgba(29, 78, 216, 0.25);
+
+  --shadow-card: 0 1px 2px rgba(28, 25, 23, 0.04), 0 8px 24px -12px rgba(28, 25, 23, 0.08);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --topbar-height: 64px;
+}

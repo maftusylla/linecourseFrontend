@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tableau de bord de l’enseignant LineCourse : aperçu des formations créées, statuts de publication et inscriptions."
+    />
+    <title>Tableau de bord enseignant — LineCourse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/theme-light.css" />
+    <link rel="stylesheet" href="../assets/css/theme-dark.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/pages.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Aller au contenu principal</a>
+
+    <header class="topbar" role="banner">
+      <div class="topbar-inner">
+        <a href="tableau-de-bord.html" class="brand-wordmark">LineCourse</a>
+
+        <nav class="topbar-nav" aria-label="Navigation enseignant">
+          <a href="tableau-de-bord.html" class="nav-link is-active" aria-current="page">Tableau de bord</a>
+          <a href="catalogue.html" class="nav-link">Catalogue</a>
+          <a href="cours-crees.html" class="nav-link">Cours créés</a>
+          <a href="studio.html" class="nav-link">Studio</a>
+          <a href="inscriptions.html" class="nav-link">Inscriptions</a>
+        </nav>
+
+        <div class="topbar-actions">
+          <a href="../connexion.html" class="btn btn-secondary btn-nav-cta">Déconnexion</a>
+          <details class="mobile-nav-details">
+            <summary class="mobile-menu-summary" aria-label="Ouvrir le menu">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <line x1="4" y1="7" x2="20" y2="7" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="17" x2="20" y2="17" />
+              </svg>
+            </summary>
+            <div class="mobile-drawer">
+              <nav class="mobile-nav" aria-label="Navigation mobile enseignant">
+                <a href="tableau-de-bord.html" class="mobile-nav-link is-active">Tableau de bord</a>
+                <a href="catalogue.html" class="mobile-nav-link">Catalogue</a>
+                <a href="cours-crees.html" class="mobile-nav-link">Cours créés</a>
+                <a href="studio.html" class="mobile-nav-link">Studio</a>
+                <a href="inscriptions.html" class="mobile-nav-link">Inscriptions</a>
+                <a href="profil.html" class="mobile-nav-link">Profil &amp; sécurité</a>
+                <a href="../connexion.html" class="mobile-nav-link mobile-nav-cta">Déconnexion</a>
+              </nav>
+            </div>
+          </details>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-container">
+      <div class="workspace-shell">
+        <aside class="workspace-sidebar" aria-label="Menu de l'espace enseignant">
+          <div class="sidebar-heading">
+            <div class="author-inline">
+              <img
+                src="../assets/images/instructor-portrait.jpg"
+                alt="Moussa Diop"
+                class="avatar-md"
+                referrerpolicy="no-referrer"
+              />
+              <div>
+                <div><strong>Moussa Diop</strong></div>
+                <div class="muted-text">Enseignant</div>
+              </div>
+            </div>
+          </div>
+          <nav class="sidebar-nav">
+            <a href="tableau-de-bord.html" class="sidebar-link is-active" aria-current="page">Tableau de bord</a>
+            <a href="catalogue.html" class="sidebar-link">Catalogue</a>
+            <a href="cours-crees.html" class="sidebar-link">Cours créés (4)</a>
+            <a href="studio.html" class="sidebar-link">Studio pédagogique</a>
+            <a href="inscriptions.html" class="sidebar-link">Inscriptions</a>
+            <a href="profil.html" class="sidebar-link">Profil &amp; sécurité</a>
+          </nav>
+        </aside>
+
+        <div class="workspace-main">
+          <section class="surface-panel stack-md" aria-labelledby="teacher-welcome-heading">
+            <div class="section-header">
+              <div class="stack-sm">
+                <span class="hero-kicker">Espace Enseignant</span>
+                <h1 class="page-title" id="teacher-welcome-heading">Tableau de bord pédagogique</h1>
+                <p class="muted-text">
+                  Pilotez vos propres formations, structurez vos modules et suivez les inscriptions de vos apprenants.
+                </p>
+              </div>
+              <div class="filter-toolbar">
+                <a href="studio.html" class="btn btn-primary">Créer une formation</a>
+                <a href="cours-crees.html" class="btn btn-secondary">Gérer mes cours</a>
+              </div>
+            </div>
+          </section>
+
+          <section class="kpi-strip" aria-label="Indicateurs de l'enseignant">
+            <div class="kpi-item">
+              <div class="kpi-value">4</div>
+              <div class="kpi-label">Formations créées</div>
+            </div>
+            <div class="kpi-item">
+              <div class="kpi-value">3</div>
+              <div class="kpi-label">Cours publiés</div>
+            </div>
+            <div class="kpi-item">
+              <div class="kpi-value">1</div>
+              <div class="kpi-label">Brouillon en préparation</div>
+            </div>
+            <div class="kpi-item">
+              <div class="kpi-value">42</div>
+              <div class="kpi-label">Apprenants inscrits</div>
+            </div>
+          </section>
+
+          <section class="stack-md" aria-labelledby="recent-teacher-courses">
+            <div class="section-header">
+              <div>
+                <h2 class="section-title" id="recent-teacher-courses">Vos formations récentes</h2>
+                <p class="muted-text">Accès direct à l’édition des modules, des leçons et aux listes d’inscrits.</p>
+              </div>
+              <a href="cours-crees.html" class="inline-link">Voir tous mes cours →</a>
+            </div>
+
+            <div class="course-grid-2">
+              <article class="course-card">
+                <div class="media-frame">
+                  <img
+                    src="../assets/images/course-architecture.jpg"
+                    alt="Architecture Express & TypeScript Modulaire"
+                    referrerpolicy="no-referrer"
+                  />
+                </div>
+                <div class="course-card-body">
+                  <div class="meta-line">
+                    <span>Backend</span>
+                    <span aria-hidden="true">·</span>
+                    <span class="mono-num">4 modules · 12 leçons</span>
+                    <span aria-hidden="true">·</span>
+                    <span class="status-label is-success">Publié</span>
+                  </div>
+                  <h3 class="card-title">Architecture Express &amp; TypeScript Modulaire</h3>
+                  <p class="course-card-desc">18 apprenants inscrits · Progression moyenne des inscrits : 64 %.</p>
+                  <div class="course-card-footer">
+                    <a href="inscriptions.html" class="btn btn-ghost btn-sm">Inscrits (18)</a>
+                    <a href="studio.html" class="btn btn-primary btn-sm">Ouvrir dans le Studio</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="course-card">
+                <div class="media-frame">
+                  <img
+                    src="../assets/images/course-devops.jpg"
+                    alt="Observation et métriques d'applications Node.js"
+                    referrerpolicy="no-referrer"
+                  />
+                </div>
+                <div class="course-card-body">
+                  <div class="meta-line">
+                    <span>Qualité logicielle</span>
+                    <span aria-hidden="true">·</span>
+                    <span class="mono-num">2 modules · 5 leçons</span>
+                    <span aria-hidden="true">·</span>
+                    <span class="status-label is-warning">Brouillon</span>
+                  </div>
+                  <h3 class="card-title">Journalisation structurée &amp; Diagnostic Node.js</h3>
+                  <p class="course-card-desc">Formation en cours de rédaction, non visible dans le catalogue public.</p>
+                  <div class="course-card-footer">
+                    <a href="cours-crees.html" class="btn btn-ghost btn-sm">Actions</a>
+                    <a href="studio.html" class="btn btn-primary btn-sm">Compléter le brouillon</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <a href="tableau-de-bord.html" class="brand-wordmark">LineCourse</a>
+          <p class="footer-copy">
+            Espace enseignant · Création de cours, gestion des modules et suivi des inscriptions.
+          </p>
+        </div>
+        <nav class="footer-links" aria-label="Navigation enseignant">
+          <a href="tableau-de-bord.html">Tableau de bord</a>
+          <a href="catalogue.html">Catalogue</a>
+          <a href="cours-crees.html">Cours créés</a>
+          <a href="studio.html">Studio</a>
+          <a href="inscriptions.html">Inscriptions</a>
+          <a href="profil.html">Profil &amp; sécurité</a>
+          <a href="../connexion.html">Déconnexion</a>
+        </nav>
+        <div class="footer-legal">
+          <span>© 2026 LineCourse</span>
+          <span aria-hidden="true">·</span>
+          <span>Espace Enseignant</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

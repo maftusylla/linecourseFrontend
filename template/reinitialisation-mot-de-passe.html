@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Définir un nouveau mot de passe à l'aide du jeton reçu par e-mail — LineCourse."
+    />
+    <title>Réinitialisation du mot de passe — LineCourse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/theme-light.css" />
+    <link rel="stylesheet" href="assets/css/theme-dark.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Aller au contenu principal</a>
+
+    <header class="topbar" role="banner">
+      <div class="topbar-inner">
+        <a href="index.html" class="brand-wordmark">LineCourse</a>
+
+        <nav class="topbar-nav" aria-label="Navigation publique">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="catalogue.html" class="nav-link">Catalogue</a>
+          <a href="connexion.html" class="nav-link">Connexion</a>
+        </nav>
+
+        <div class="topbar-actions">
+          <a href="inscription.html" class="btn btn-primary btn-nav-cta">Inscription</a>
+          <details class="mobile-nav-details">
+            <summary class="mobile-menu-summary" aria-label="Ouvrir le menu">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <line x1="4" y1="7" x2="20" y2="7" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="17" x2="20" y2="17" />
+              </svg>
+            </summary>
+            <div class="mobile-drawer">
+              <nav class="mobile-nav" aria-label="Navigation mobile">
+                <a href="index.html" class="mobile-nav-link">Accueil</a>
+                <a href="catalogue.html" class="mobile-nav-link">Catalogue</a>
+                <a href="connexion.html" class="mobile-nav-link">Connexion</a>
+                <a href="inscription.html" class="mobile-nav-link mobile-nav-cta">Inscription</a>
+              </nav>
+            </div>
+          </details>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-container stack-xl">
+      <section class="auth-layout" aria-labelledby="reset-heading">
+        <div class="auth-visual">
+          <img
+            src="assets/images/course-security.jpg"
+            alt="Renouvellement sécurisé du mot de passe"
+            referrerpolicy="no-referrer"
+          />
+          <div class="auth-visual-overlay">
+            <span class="hero-kicker" style="color: #fbbf24;">Nouveau mot de passe</span>
+            <h1 class="section-title" style="color: #f5f4f1;">
+              Définissez un mot de passe robuste et fermez les anciennes sessions.
+            </h1>
+            <p style="margin: 0; color: #d6d3cd; max-width: 44ch;">
+              Après réinitialisation, toutes vos sessions ouvertes sur d’autres appareils sont automatiquement révoquées par sécurité.
+            </p>
+          </div>
+        </div>
+
+        <div class="auth-panel">
+          <div>
+            <h2 class="page-title" id="reset-heading">Réinitialiser le mot de passe</h2>
+            <p class="muted-text" style="margin-top: 0.35rem;">
+              Renseignez le jeton reçu par e-mail puis votre nouveau mot de passe.
+            </p>
+          </div>
+
+          <form class="form-grid" action="connexion.html" method="get">
+            <div class="field">
+              <label class="field-label" for="reset-token">Jeton de réinitialisation</label>
+              <input
+                class="input mono-num"
+                id="reset-token"
+                name="token"
+                type="text"
+                placeholder="Jeton à usage unique"
+                required
+              />
+            </div>
+
+            <div class="form-grid-2">
+              <div class="field">
+                <label class="field-label" for="reset-pwd">Nouveau mot de passe</label>
+                <input
+                  class="input"
+                  id="reset-pwd"
+                  name="password"
+                  type="password"
+                  placeholder="Min. 8 caractères"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label class="field-label" for="reset-confirm">Confirmation</label>
+                <input
+                  class="input"
+                  id="reset-confirm"
+                  name="password_confirmation"
+                  type="password"
+                  placeholder="Répéter"
+                  required
+                />
+              </div>
+            </div>
+
+            <span class="field-hint">
+              Le nouveau mot de passe doit contenir au moins 8 caractères, une majuscule, une minuscule et un chiffre, et être différent de l’ancien.
+            </span>
+
+            <button type="submit" class="btn btn-primary btn-block">Enregistrer le nouveau mot de passe</button>
+
+            <div class="meta-line">
+              <a href="mot-de-passe-oublie.html" class="inline-link">Demander un nouveau lien</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <a href="index.html" class="brand-wordmark">LineCourse</a>
+          <p class="footer-copy">
+            Plateforme de formation en ligne, parcours modulaires et suivi des apprentissages.
+          </p>
+        </div>
+        <nav class="footer-links" aria-label="Navigation publique">
+          <a href="index.html">Accueil</a>
+          <a href="catalogue.html">Catalogue</a>
+          <a href="connexion.html">Connexion</a>
+          <a href="inscription.html">Inscription</a>
+        </nav>
+        <div class="footer-legal">
+          <span>© 2026 LineCourse</span>
+          <span aria-hidden="true">·</span>
+          <span>Maquette statique HTML5 / CSS3</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="LineCourse — Plateforme de formations techniques en ligne structurées par modules et leçons progressives."
+    />
+    <title>LineCourse — Plateforme de formation en ligne</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/theme-light.css" />
+    <link rel="stylesheet" href="assets/css/theme-dark.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Aller au contenu principal</a>
+
+    <header class="topbar" role="banner">
+      <div class="topbar-inner">
+        <a href="index.html" class="brand-wordmark">LineCourse</a>
+
+        <nav class="topbar-nav" aria-label="Navigation publique">
+          <a href="index.html" class="nav-link is-active" aria-current="page">Accueil</a>
+          <a href="catalogue.html" class="nav-link">Catalogue</a>
+          <a href="connexion.html" class="nav-link">Connexion</a>
+        </nav>
+
+        <div class="topbar-actions">
+          <a href="inscription.html" class="btn btn-primary btn-nav-cta">Inscription</a>
+          <details class="mobile-nav-details">
+            <summary class="mobile-menu-summary" aria-label="Ouvrir le menu">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <line x1="4" y1="7" x2="20" y2="7" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="17" x2="20" y2="17" />
+              </svg>
+            </summary>
+            <div class="mobile-drawer">
+              <nav class="mobile-nav" aria-label="Navigation mobile">
+                <a href="index.html" class="mobile-nav-link is-active">Accueil</a>
+                <a href="catalogue.html" class="mobile-nav-link">Catalogue</a>
+                <a href="connexion.html" class="mobile-nav-link">Connexion</a>
+                <a href="inscription.html" class="mobile-nav-link mobile-nav-cta">Inscription</a>
+              </nav>
+            </div>
+          </details>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-container stack-xl">
+      <!-- 1. Introduction à la plateforme -->
+      <section class="hero-split" aria-labelledby="hero-heading">
+        <div class="hero-copy">
+          <span class="hero-kicker">Plateforme de formation en ligne LineCourse</span>
+          <h1 class="hero-title" id="hero-heading">
+            Développez vos compétences techniques avec des parcours structurés.
+          </h1>
+          <p class="lead-text">
+            LineCourse rassemble des formations conçues par des formateurs expérimentés, découpées en modules clairs et leçons progressives pour accompagner chaque apprenant étape par étape.
+          </p>
+          <div class="hero-actions">
+            <a href="#catalogue-accueil" class="btn btn-primary">Découvrir le catalogue</a>
+            <a href="inscription.html" class="btn btn-secondary">Créer un compte</a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <img
+            src="assets/images/hero-studio.jpg"
+            alt="Espace d'étude architectural de la plateforme LineCourse"
+            referrerpolicy="no-referrer"
+          />
+          <div class="hero-media-scrim">
+            <p class="hero-caption">
+              Des cours pratiques en architecture web, sécurité applicative, bases de données et conception d’interfaces.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="kpi-strip" aria-label="Aperçu de l'offre de formation">
+        <div class="kpi-item">
+          <div class="kpi-value">6</div>
+          <div class="kpi-label">Formations publiées</div>
+        </div>
+        <div class="kpi-item">
+          <div class="kpi-value">19</div>
+          <div class="kpi-label">Modules pédagogiques</div>
+        </div>
+        <div class="kpi-item">
+          <div class="kpi-value">64</div>
+          <div class="kpi-label">Leçons détaillées</div>
+        </div>
+        <div class="kpi-item">
+          <div class="kpi-value">0–100%</div>
+          <div class="kpi-label">Suivi individuel d’avancement</div>
+        </div>
+      </section>
+
+      <!-- 2. Cours mis en avant -->
+      <section class="stack-md" aria-labelledby="featured-heading">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title" id="featured-heading">Cours mis en avant</h2>
+            <p class="muted-text">Les parcours les plus suivis pour démarrer sur des bases solides.</p>
+          </div>
+          <a href="catalogue.html" class="inline-link">Voir tout le catalogue →</a>
+        </div>
+
+        <div class="course-grid-2">
+          <article class="course-card">
+            <div class="media-frame">
+              <img
+                src="assets/images/course-architecture.jpg"
+                alt="Architecture Express & TypeScript Modulaire"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <div class="course-card-body">
+              <div class="meta-line">
+                <span>Backend</span>
+                <span aria-hidden="true">·</span>
+                <span class="mono-num">4 modules</span>
+                <span aria-hidden="true">·</span>
+                <span class="mono-num">12 leçons</span>
+                <span aria-hidden="true">·</span>
+                <span class="status-label is-success">Publié</span>
+              </div>
+              <h3 class="card-title">Architecture Express &amp; TypeScript Modulaire</h3>
+              <p class="course-card-desc">
+                Concevez des applications Node.js maintenables avec validation stricte des entrées, services découplés et gestion unifiée des erreurs.
+              </p>
+              <div class="course-card-footer">
+                <div class="author-inline">
+                  <img
+                    src="assets/images/instructor-portrait.jpg"
+                    alt="Moussa Diop"
+                    class="avatar-sm"
+                    referrerpolicy="no-referrer"
+                  />
+                  <span class="muted-text">Moussa Diop</span>
+                </div>
+                <a href="detail-cours.html" class="btn btn-primary btn-sm">Consulter la fiche</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="media-frame">
+              <img
+                src="assets/images/course-security.jpg"
+                alt="Sécurité des API, JWT & Rotation des Sessions"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <div class="course-card-body">
+              <div class="meta-line">
+                <span>Sécurité</span>
+                <span aria-hidden="true">·</span>
+                <span class="mono-num">3 modules</span>
+                <span aria-hidden="true">·</span>
+                <span class="mono-num">10 leçons</span>
+                <span aria-hidden="true">·</span>
+                <span class="status-label is-success">Publié</span>
+              </div>
+              <h3 class="card-title">Sécurité des API, JWT &amp; Rotation des Sessions</h3>
+              <p class="course-card-desc">
+                Maîtrisez l’authentification par jetons, le renouvellement sécurisé, la vérification d’e-mail et le contrôle d’accès par rôles.
+              </p>
+              <div class="course-card-footer">
+                <div class="author-inline">
+                  <img
+                    src="assets/images/instructor-portrait.jpg"
+                    alt="Moussa Diop"
+                    class="avatar-sm"
+                    referrerpolicy="no-referrer"
+                  />
+                  <span class="muted-text">Moussa Diop</span>
+                </div>
+                <a href="detail-cours.html" class="btn btn-primary btn-sm">Consulter la fiche</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3. Catalogue des cours -->
+      <section id="catalogue-accueil" class="stack-md" aria-labelledby="home-catalog-heading">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title" id="home-catalog-heading">Catalogue des formations</h2>
+            <p class="muted-text">Parcourez l’ensemble des cours publiés par catégorie et consultez leur programme détaillé.</p>
+          </div>
+          <a href="catalogue.html" class="btn btn-secondary btn-sm">Filtrer dans le catalogue</a>
+        </div>
+
+        <div class="surface-panel filter-toolbar" aria-label="Catégories de cours">
+          <div class="segmented" role="group" aria-label="Catégories disponibles">
+            <a href="catalogue.html" class="segmented-item is-active">Toutes</a>
+            <a href="catalogue.html" class="segmented-item">Backend</a>
+            <a href="catalogue.html" class="segmented-item">Sécurité</a>
+            <a href="catalogue.html" class="segmented-item">Interfaces</a>
+            <a href="catalogue.html" class="segmented-item">Données</a>
+            <a href="catalogue.html" class="segmented-item">Qualité logicielle</a>
+            <a href="catalogue.html" class="segmented-item">Pédagogie</a>
+          </div>
+        </div>
+
+        <div class="course-grid">
+          <article class="course-card">
+            <div class="media-frame">
+              <img
+                src="assets/images/course-ui-systems.jpg"
+                alt="Systèmes d'interfaces HTML5 & CSS3 modernes"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <div class="course-card-body">
+              <div class="meta-line">
+                <span>Interfaces</span>
+                <span aria-hidden="true">·</span>
+                <span class="mono-num">3 modules</span>
+                <span aria-hidden="true">·</span>
+                <span class="mono-num">11 leçons</span>
+              </div>
+              <h3 class="card-title">Systèmes d’interfaces HTML5 &amp; CSS3 modernes</h3>
+              <p class="course-card-desc">
+                Hiérarchie typographique, grilles responsives, accessibilité clavier et déclinaison en thème clair et sombre.
+              </p>
+              <div class="course-card-footer">
+                <div class="author-inline">
+                  <img
+                    src="assets/images/instructor-portrait.jpg"
+                    alt="Fatou Sow"
+                    class="avatar-sm"
+                    referrerpolicy="no-referrer"
+                  />
+                  <span class="muted-text">Fatou Sow</span>
+                </div>
+                <a href="detail-cours.html" class="btn btn-secondary btn-sm">Voir le cours</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="media-frame">
+              <img
+                src="assets/images/course-database.jpg"
+                alt="Modélisation MySQL & Migrations Sequelize"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <div class="course-card-body">
+              <div class="meta-line">
+                <span>Données</span>
+                <span aria-hidden="true">·</span>
+                <span class="mono-num">4 modules</span>
+                <span aria-hidden="true">·</span>
+                <span class="mono-num">14 leçons</span>
+              </div>
+              <h3 class="card-title">Modélisation MySQL &amp; Migrations Sequelize</h3>
+              <p class="course-card-desc">
+                Schémas relationnels propres, contraintes d’intégrité, migrations versionnées et gestion des suppressions logiques.
+              </p>
+              <div class="course-card-footer">
+                <div class="author-inline">
+                  <img
+                    src="assets/images/instructor-portrait.jpg"
+                    alt="Fatou Sow"
+                    class="avatar-sm"
+                    referrerpolicy="no-referrer"
+                  />
+                  <span class="muted-text">Fatou Sow</span>
+                </div>
+                <a href="detail-cours.html" class="btn btn-secondary btn-sm">Voir le cours</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="media-frame">
+              <img
+                src="assets/images/course-devops.jpg"
+                alt="Tests unitaires et d'intégration avec Vitest"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <div class="course-card-body">
+              <div class="meta-line">
+                <span>Qualité logicielle</span>
+                <span aria-hidden="true">·</span>
+                <span class="mono-num">3 modules</span>
+                <span aria-hidden="true">·</span>
+                <span class="mono-num">9 leçons</span>
+              </div>
+              <h3 class="card-title">Tests unitaires et d’intégration avec Vitest</h3>
+              <p class="course-card-desc">
+                Validation des règles métier, isolation des dépôts et vérification fiable des scénarios applicatifs.
+              </p>
+              <div class="course-card-footer">
+                <div class="author-inline">
+                  <img
+                    src="assets/images/instructor-portrait.jpg"
+                    alt="Moussa Diop"
+                    class="avatar-sm"
+                    referrerpolicy="no-referrer"
+                  />
+                  <span class="muted-text">Moussa Diop</span>
+                </div>
+                <a href="detail-cours.html" class="btn btn-secondary btn-sm">Voir le cours</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="media-frame">
+              <img
+                src="assets/images/course-pedagogy.jpg"
+                alt="Ingénierie pédagogique & Structuration de modules"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <div class="course-card-body">
+              <div class="meta-line">
+                <span>Pédagogie</span>
+                <span aria-hidden="true">·</span>
+                <span class="mono-num">2 modules</span>
+                <span aria-hidden="true">·</span>
+                <span class="mono-num">8 leçons</span>
+              </div>
+              <h3 class="card-title">Ingénierie pédagogique &amp; Structuration de modules</h3>
+              <p class="course-card-desc">
+                Découpez un programme technique en séquences claires, objectifs mesurables et leçons progressives.
+              </p>
+              <div class="course-card-footer">
+                <div class="author-inline">
+                  <img
+                    src="assets/images/instructor-portrait.jpg"
+                    alt="Fatou Sow"
+                    class="avatar-sm"
+                    referrerpolicy="no-referrer"
+                  />
+                  <span class="muted-text">Fatou Sow</span>
+                </div>
+                <a href="detail-cours.html" class="btn btn-secondary btn-sm">Voir le cours</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 4. Informations générales sur la plateforme -->
+      <section class="surface-panel stack-md" aria-labelledby="platform-info-heading">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title" id="platform-info-heading">Comment fonctionne LineCourse</h2>
+            <p class="muted-text">Une structure claire pensée pour apprendre, enseigner et administrer en toute sérénité.</p>
+          </div>
+        </div>
+
+        <div class="course-grid">
+          <div class="stack-sm">
+            <h3 class="card-title">01. Parcours modulaires clairs</h3>
+            <p class="muted-text">
+              Chaque formation est organisée en modules thématiques et en leçons ciblées afin de progresser sans surcharge cognitive.
+            </p>
+          </div>
+          <div class="stack-sm">
+            <h3 class="card-title">02. Suivi précis de la progression</h3>
+            <p class="muted-text">
+              Une fois inscrit avec un compte vérifié, chaque leçon enregistre votre taux d’avancement de 0 à 100 % et calcule la progression globale du cours.
+            </p>
+          </div>
+          <div class="stack-sm">
+            <h3 class="card-title">03. Comptes sécurisés et vérifiés</h3>
+            <p class="muted-text">
+              L’inscription inclut la confirmation par adresse e-mail, le renouvellement sécurisé du mot de passe et la maîtrise de vos sessions actives.
+            </p>
+          </div>
+        </div>
+
+        <div class="alert-banner">
+          <div>
+            <strong class="alert-title">Prêt à démarrer votre apprentissage ?</strong>
+            <span>Créez votre compte apprenant ou connectez-vous pour vous inscrire aux formations publiées.</span>
+          </div>
+          <div class="filter-toolbar">
+            <a href="connexion.html" class="btn btn-secondary btn-sm">Se connecter</a>
+            <a href="inscription.html" class="btn btn-primary btn-sm">Créer un compte</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <a href="index.html" class="brand-wordmark">LineCourse</a>
+          <p class="footer-copy">
+            Plateforme de formation en ligne, parcours modulaires et suivi des apprentissages.
+          </p>
+        </div>
+        <nav class="footer-links" aria-label="Navigation publique">
+          <a href="index.html">Accueil</a>
+          <a href="catalogue.html">Catalogue</a>
+          <a href="connexion.html">Connexion</a>
+          <a href="inscription.html">Inscription</a>
+        </nav>
+        <div class="footer-legal">
+          <span>© 2026 LineCourse</span>
+          <span aria-hidden="true">·</span>
+          <span>Maquette statique HTML5 / CSS3</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
