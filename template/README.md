@@ -42,18 +42,18 @@ Navigation dédiée (`Tableau de bord`, `Utilisateurs`, `Cours`, `Rôles & accè
 - `admin/securite.html` — Journal des événements d’authentification et supervision des sessions actives.
 - `admin/profil.html` — Profil et sécurité du compte administrateur.
 
-### 5. Feuilles de style (`assets/css/`)
-- `assets/css/theme-light.css` — Palette claire (*graphite, pierre et ambre*).
-- `assets/css/theme-dark.css` — Palette sombre activable sans JavaScript via `class="theme-dark"` sur `<html>` ou via `prefers-color-scheme: dark`.
-- `assets/css/base.css` — Socle typographique, espacements et accessibilité.
-- `assets/css/components.css` — Barre de navigation fixe, barre latérale d’espace, cartes, tableaux, formulaires et bandeaux d’état.
-- `assets/css/pages.css` — Mises en page spécifiques et breakpoints responsives.
+### 5. Feuilles de style (`../src/assets/css/`)
+- `../src/assets/css/theme-light.css` — Palette claire (*graphite, pierre et ambre*).
+- `../src/assets/css/theme-dark.css` — Palette sombre activable sans JavaScript via `class="theme-dark"` sur `<html>` ou via `prefers-color-scheme: dark`.
+- `../src/assets/css/base.css` — Socle typographique, espacements et accessibilité.
+- `../src/assets/css/components.css` — Barre de navigation fixe, barre latérale d’espace, cartes, tableaux, formulaires et bandeaux d’état.
+- `../src/assets/css/pages.css` — Mises en page spécifiques et breakpoints responsives.
 
-### 6. Ressources graphiques (`assets/images/`)
+### 6. Ressources graphiques (`../src/assets/images/`)
 - `hero-studio.jpg`, `course-architecture.jpg`, `course-security.jpg`, `course-ui-systems.jpg`, `course-database.jpg`, `course-devops.jpg`, `course-pedagogy.jpg`, `instructor-portrait.jpg`, `learner-portrait.jpg`.
 
 ## Visualisation
 
-1. Ouvrez **`/preview/index.html`** sur le serveur de développement local (ou servez le dossier `template/` avec tout serveur HTTP statique).
-2. Accédez aux maquettes privées via `/preview/apprenant/tableau-de-bord.html`, `/preview/enseignant/tableau-de-bord.html` et `/preview/admin/tableau-de-bord.html`.
+1. Démarrez le serveur de développement depuis la racine du projet et ouvrez **`/template/index.html`**.
+2. Accédez aux maquettes privées via `/template/apprenant/tableau-de-bord.html`, `/template/enseignant/tableau-de-bord.html` et `/template/admin/tableau-de-bord.html`.
 3. Pour tester le mode sombre, ajoutez `class="theme-dark"` sur la balise `<html>` ou activez le thème sombre système.
