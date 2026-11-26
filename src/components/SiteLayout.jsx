@@ -29,8 +29,6 @@ const layouts = {
       { label: 'Catalogue', to: '/enseignant/catalogue' },
       { label: 'Mes formations', to: '/enseignant/cours-crees' },
       { label: 'Studio', to: '/enseignant/studio' },
-      { label: 'Modules', to: '/enseignant/studio/modules' },
-      { label: 'Leçons', to: '/enseignant/studio/lecons' },
       { label: 'Inscriptions', to: '/enseignant/inscriptions' },
       { label: 'Profil & sécurité', to: '/enseignant/profil' },
     ],
@@ -195,7 +193,9 @@ export default function SiteLayout({ kind }) {
     <div className={`page-layout page-layout--${kind}`} onSubmitCapture={handleDemoSubmit}>
       <a className="skip-link" href="#main-content">Aller au contenu principal</a>
       <SiteHeader layout={layout} />
-      <Outlet />
+      <main id="main-content" className="main-container stack-xl">
+        <Outlet />
+      </main>
       {showNotice && formNotice.message && (
         <div className="form-notice alert-banner is-info" role="status">
           {formNotice.message}

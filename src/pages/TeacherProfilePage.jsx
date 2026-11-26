@@ -115,66 +115,6 @@ export default function TeacherProfilePage() {
             </form>
           </section>
 
-          <section className="surface-panel stack-md" aria-labelledby="teacher-sessions-heading">
-            <div className="panel-header">
-              <div>
-                <h2 className="card-title" id="teacher-sessions-heading">Sessions actives</h2>
-                <p className="muted-text">Contrôlez les navigateurs connectés à votre compte enseignant.</p>
-              </div>
-              <button type="button" className="btn btn-secondary btn-sm">Révoquer les autres sessions</button>
-            </div>
-            <div className="table-wrap">
-              <table className="data-table">
-                <thead>
-                  <tr>
-                    <th>Appareil</th>
-                    <th>Adresse IP</th>
-                    <th>Dernière activité</th>
-                    <th>Statut</th>
-                    <th className="col-right">Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Firefox · macOS</td>
-                    <td className="mono-num">192.168.1.12</td>
-                    <td>Aujourd’hui, 09:40</td>
-                    <td><span className="status-label is-success">Session actuelle</span></td>
-                    <td className="col-right"><span className="muted-text">—</span></td>
-                  </tr>
-                  <tr>
-                    <td>Chrome · Windows 11</td>
-                    <td className="mono-num">41.82.194.18</td>
-                    <td>Il y a 2 jours</td>
-                    <td><span className="status-label is-info">Active</span></td>
-                    <td className="col-right">
-                      <button type="button" className="btn btn-ghost btn-sm">Révoquer</button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
-
-          <section className="surface-panel stack-md" aria-labelledby="teacher-deactivate-heading">
-            <h2 className="card-title" id="teacher-deactivate-heading">Désactivation du compte</h2>
-            <p className="muted-text">La désactivation bloque la connexion et révoque toutes vos sessions actives.</p>
-            <form className="form-grid" action="#" method="post">
-              <div className="form-grid-2">
-                <div className="field">
-                  <label className="field-label" htmlFor="teacher-deact-pwd">Mot de passe actuel</label>
-                  <input id="teacher-deact-pwd" name="current_password" type="password" className="input" placeholder="••••••••••••" required />
-                </div>
-                <div className="field">
-                  <label className="field-label" htmlFor="teacher-deact-confirm">Saisissez DESACTIVER pour confirmer</label>
-                  <input id="teacher-deact-confirm" name="confirmation" type="text" className="input" placeholder="DESACTIVER" required />
-                </div>
-              </div>
-              <div className="filter-toolbar">
-                <button type="submit" className="btn btn-danger btn-sm">Désactiver mon compte</button>
-              </div>
-            </form>
-          </section>
         </div>
       </div>
     

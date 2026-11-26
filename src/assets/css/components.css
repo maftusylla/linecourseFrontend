@@ -707,8 +707,38 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  margin-top: 1.5rem;
   padding-top: 1.25rem;
   border-top: 1px solid var(--border-hairline);
+}
+
+.pagination-button {
+  min-width: 112px;
+}
+
+.pagination-button:disabled {
+  opacity: 0.48;
+  cursor: not-allowed;
+  background: var(--bg-subtle);
+  color: var(--text-muted);
+  border-color: var(--border-hairline);
+  transform: none;
+}
+
+.pagination-status {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem;
+  min-width: 150px;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.pagination-status strong {
+  color: var(--text-primary);
+  font-weight: 700;
 }
 
 /* 10. Workspace Sidebar (Espace Formateur & Espace Admin) */
@@ -716,7 +746,7 @@
   display: grid;
   grid-template-columns: 248px minmax(0, 1fr);
   gap: 2rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .workspace-sidebar {

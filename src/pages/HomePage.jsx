@@ -1,11 +1,10 @@
 import { images } from '../assets/images.js'
 import { Link } from 'react-router-dom'
+import CourseCatalogue from '../components/CourseCatalogue.jsx'
 
 export default function HomePage() {
-  return (
+return ( 
     <>
-
-      
       <section className="hero-split" aria-labelledby="hero-heading">
         <div className="hero-copy">
           <span className="hero-kicker">Plateforme de formation en ligne LineCourse</span>
@@ -163,147 +162,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="course-grid">
-          <article className="course-card">
-            <div className="media-frame">
-              <img
-                src={images.courseUiSystems}
-                alt="Systèmes d'interfaces HTML5 & CSS3 modernes"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-            <div className="course-card-body">
-              <div className="meta-line">
-                <span>Interfaces</span>
-                <span aria-hidden="true">·</span>
-                <span className="mono-num">3 modules</span>
-                <span aria-hidden="true">·</span>
-                <span className="mono-num">11 leçons</span>
-              </div>
-              <h3 className="card-title">Systèmes d’interfaces HTML5 &amp; CSS3 modernes</h3>
-              <p className="course-card-desc">
-                Hiérarchie typographique, grilles responsives, accessibilité clavier et déclinaison en thème clair et sombre.
-              </p>
-              <div className="course-card-footer">
-                <div className="author-inline">
-                  <img
-                    src={images.instructorPortrait}
-                    alt="Fatou Sow"
-                    className="avatar-sm"
-                    referrerPolicy="no-referrer"
-                  />
-                  <span className="muted-text">Fatou Sow</span>
-                </div>
-                <Link to="/formations/architecture-express-typescript-modulaire" className="btn btn-secondary btn-sm">Voir le cours</Link>
-              </div>
-            </div>
-          </article>
-
-          <article className="course-card">
-            <div className="media-frame">
-              <img
-                src={images.courseDatabase}
-                alt="Modélisation MySQL & Migrations Sequelize"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-            <div className="course-card-body">
-              <div className="meta-line">
-                <span>Données</span>
-                <span aria-hidden="true">·</span>
-                <span className="mono-num">4 modules</span>
-                <span aria-hidden="true">·</span>
-                <span className="mono-num">14 leçons</span>
-              </div>
-              <h3 className="card-title">Modélisation MySQL &amp; Migrations Sequelize</h3>
-              <p className="course-card-desc">
-                Schémas relationnels propres, contraintes d’intégrité, migrations versionnées et gestion des suppressions logiques.
-              </p>
-              <div className="course-card-footer">
-                <div className="author-inline">
-                  <img
-                    src={images.instructorPortrait}
-                    alt="Fatou Sow"
-                    className="avatar-sm"
-                    referrerPolicy="no-referrer"
-                  />
-                  <span className="muted-text">Fatou Sow</span>
-                </div>
-                <Link to="/formations/architecture-express-typescript-modulaire" className="btn btn-secondary btn-sm">Voir le cours</Link>
-              </div>
-            </div>
-          </article>
-
-          <article className="course-card">
-            <div className="media-frame">
-              <img
-                src={images.courseDevops}
-                alt="Tests unitaires et d'intégration avec Vitest"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-            <div className="course-card-body">
-              <div className="meta-line">
-                <span>Qualité logicielle</span>
-                <span aria-hidden="true">·</span>
-                <span className="mono-num">3 modules</span>
-                <span aria-hidden="true">·</span>
-                <span className="mono-num">9 leçons</span>
-              </div>
-              <h3 className="card-title">Tests unitaires et d’intégration avec Vitest</h3>
-              <p className="course-card-desc">
-                Validation des règles métier, isolation des dépôts et vérification fiable des scénarios applicatifs.
-              </p>
-              <div className="course-card-footer">
-                <div className="author-inline">
-                  <img
-                    src={images.instructorPortrait}
-                    alt="Moussa Diop"
-                    className="avatar-sm"
-                    referrerPolicy="no-referrer"
-                  />
-                  <span className="muted-text">Moussa Diop</span>
-                </div>
-                <Link to="/formations/architecture-express-typescript-modulaire" className="btn btn-secondary btn-sm">Voir le cours</Link>
-              </div>
-            </div>
-          </article>
-
-          <article className="course-card">
-            <div className="media-frame">
-              <img
-                src={images.coursePedagogy}
-                alt="Ingénierie pédagogique & Structuration de modules"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-            <div className="course-card-body">
-              <div className="meta-line">
-                <span>Pédagogie</span>
-                <span aria-hidden="true">·</span>
-                <span className="mono-num">2 modules</span>
-                <span aria-hidden="true">·</span>
-                <span className="mono-num">8 leçons</span>
-              </div>
-              <h3 className="card-title">Ingénierie pédagogique &amp; Structuration de modules</h3>
-              <p className="course-card-desc">
-                Découpez un programme technique en séquences claires, objectifs mesurables et leçons progressives.
-              </p>
-              <div className="course-card-footer">
-                <div className="author-inline">
-                  <img
-                    src={images.instructorPortrait}
-                    alt="Fatou Sow"
-                    className="avatar-sm"
-                    referrerPolicy="no-referrer"
-                  />
-                  <span className="muted-text">Fatou Sow</span>
-                </div>
-                <Link to="/formations/architecture-express-typescript-modulaire" className="btn btn-secondary btn-sm">Voir le cours</Link>
-              </div>
-            </div>
-          </article>
-        </div>
+      <CourseCatalogue showHeader={false} />
       </section>
 
       
@@ -351,3 +210,5 @@ export default function HomePage() {
     </>
   )
 }
+          
+          

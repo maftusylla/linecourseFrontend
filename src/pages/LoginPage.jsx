@@ -20,14 +20,23 @@ export default function LoginPage() {
   try {
     const data = await apiRequest('/auth/login', {
       method: 'POST',
-      body: JSON.stringify({
-        email,
-        password,
-      }),
+      body: JSON.stringify({ email,password}),
     })
     console.log('Utilisateur connecté :', data.user)
-      const 
-    navigate('/hello')
+      const role=data.user.role
+      const destinations={
+        learner:'/apprenant/tableau-de-bord',
+        teacher:'/enseignant/tableau-de-bord',
+        admin:'/admin/tableau-de-bord'
+
+      }
+      const  destination=destinations[role]
+        if(!destination){
+          throw new Error("Role utilisateur non reconnu")
+        }
+    // navigate('/hello')
+      await navigate(destination)
+
   } catch (error) {
     setError(error.message)
   } finally {
@@ -103,10 +112,6 @@ export default function LoginPage() {
     
   )
 }
-
-
-
-
 
 
 

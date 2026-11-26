@@ -1,11 +1,12 @@
 const API_URL = import.meta.env.VITE_API_URL
 
 export async function apiRequest(endpoint, options = {}) {
+  const { returnFullResponse = false, ...fetchOptions } = options
   const response = await fetch(`${API_URL}${endpoint}`, {
-    ...options,
+    ...fetchOptions,
     headers: {
       'Content-Type': 'application/json',
-      ...options.headers,
+      ...fetchOptions.headers,
     },
   })
 
@@ -17,6 +18,6 @@ export async function apiRequest(endpoint, options = {}) {
     )
   }
 
-  return result.data
+return returnFullResponse ? result : result.data
 }
 
