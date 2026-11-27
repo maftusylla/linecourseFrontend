@@ -1,7 +1,7 @@
 import { images } from '../assets/images.js'
 import { Link, useNavigate } from 'react-router-dom'
 import {useState} from 'react'
-import  {apiRequest} from '../services/api.js'
+import { apiRequest } from '../services/api.js'
 
 export default function RegisterPage() {
   const navigate=useNavigate();
@@ -24,7 +24,7 @@ export default function RegisterPage() {
       }
       setLoading(true)
       try{
-        const data =await apiRequest('/auth/register',{
+        await apiRequest('/auth/register',{
           method: 'POST',
           body: JSON.stringify({
             email,
@@ -33,7 +33,6 @@ export default function RegisterPage() {
             password_confirmation: passwordConfirmation
         })
       })
-      console.log('Compte crée :',data)
      await navigate('/connexion')
      
     }catch(error){

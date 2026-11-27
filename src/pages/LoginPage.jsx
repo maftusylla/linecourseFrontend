@@ -1,48 +1,52 @@
 import { images } from '../assets/images.js'
-import { Link,useNavigate } from 'react-router-dom'
-import {useState} from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { useState } from 'react'
+import { useAuth } from '../contexts/AuthContext.jsx'
 import { apiRequest } from '../services/api.js'
 
 export default function LoginPage() {
-  const navigate=useNavigate();
+  const navigate = useNavigate()
+  const { login } = useAuth()
 
-  const [email,setEmail]=useState('')
-  const [password,setPassword]=useState('')
-  const [error,setError]=useState('')
-  const [loading,setLoading]=useState(false)
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [error, setError] = useState('')
+  const [loading, setLoading] = useState(false)
 
   async function handleSubmit(event) {
-  event.preventDefault()
+    event.preventDefault()
 
-  setError('')
-  setLoading(true)
+    setError('')
+    setLoading(true)
 
-  try {
-    const data = await apiRequest('/auth/login', {
-      method: 'POST',
-      body: JSON.stringify({ email,password}),
-    })
-    console.log('Utilisateur connecté :', data.user)
-      const role=data.user.role
-      const destinations={
-        learner:'/apprenant/tableau-de-bord',
-        teacher:'/enseignant/tableau-de-bord',
-        admin:'/admin/tableau-de-bord'
+    try {
+      const data = await apiRequest('/auth/login', {
+        method: 'POST',
+        body: JSON.stringify({ email, password }),
+      })
 
+      const role = data.user.role
+
+      const destinations = {
+        learner: '/apprenant/tableau-de-bord',
+        teacher: '/enseignant/tableau-de-bord',
+        admin: '/admin/tableau-de-bord',
       }
-      const  destination=destinations[role]
-        if(!destination){
-          throw new Error("Role utilisateur non reconnu")
-        }
-    // navigate('/hello')
-      await navigate(destination)
 
-  } catch (error) {
-    setError(error.message)
-  } finally {
-    setLoading(false)
+      const destination = destinations[role]
+
+      if (!destination) {
+        throw new Error('Role utilisateur non reconnu')
+      }
+
+      login(data.user, data.access_token)
+      navigate(destination)
+    } catch (error) {
+      setError(error.message)
+    } finally {
+      setLoading(false)
+    }
   }
-}
   return (
     
 
@@ -112,7 +116,6 @@ export default function LoginPage() {
     
   )
 }
-
 
 
 

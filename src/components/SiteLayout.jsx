@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import { Link, Outlet, useLocation } from 'react-router-dom'
+import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom'
+import { useAuth } from '../contexts/AuthContext.jsx'
 
 const layouts = {
   public: {
@@ -86,8 +87,18 @@ function ThemeToggle() {
 
 function SiteHeader({ layout }) {
   const { pathname } = useLocation()
+  const { logout } = useAuth()
+  const navigate = useNavigate()
   const isPublic = layout === layouts.public
   const visibleNavigation = isPublic ? layout.navigation.slice(0, 3) : layout.navigation
+
+  async function handleLogout() {
+    try {
+      await logout()
+    } finally {
+      navigate('/connexion', { replace: true })
+    }
+  }
 
   return (
     <header className="topbar" role="banner">
@@ -120,6 +131,15 @@ function SiteHeader({ layout }) {
             </Link>
           )}
           <ThemeToggle />
+          {!isPublic && (
+            <button
+              type="button"
+              className="btn btn-primary"
+              onClick={handleLogout}
+            >
+              Déconnexion
+            </button>
+          )}
           <details className="mobile-nav-details">
             <summary className="mobile-menu-summary" aria-label="Ouvrir le menu">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
